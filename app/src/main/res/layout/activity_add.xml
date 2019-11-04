@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/ln_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFF8538A"
+        android:elevation="5dp"
+        android:gravity="center">
+
+        <TextView
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA CANDIDAT"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Pisahkan kandidat yang diinputkan menggunakan enter (beda baris)"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="13sp"
+        android:textStyle="italic|bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:hint="Input Data Candidate(s) Here"
+        android:textSize="20sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_candidat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|top"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3366cc"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</LinearLayout>

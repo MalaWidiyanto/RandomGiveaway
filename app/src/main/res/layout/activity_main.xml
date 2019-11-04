@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg8" />
+
+    <LinearLayout
+        android:id="@+id/ln_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFF8538A"
+        android:elevation="5dp"
+        android:gravity="center">
+
+        <TextView
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giveaway Erlin_Shop14"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/ln_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/txv_random"
+        fontPath="fonts/Boogaloo-Regular.otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Bismillah.."
+        android:textColor="#FFF8538A"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="#3366cc"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:text="START"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:cornerRadius="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="#3366cc"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="+"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:cornerRadius="100dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="#3366cc"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:text="STOP"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/txv_powered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Powered by"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/instagram" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erlin_Shop14"
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:layout_marginLeft="10dp"
+            android:textColor="#BD1B7B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>
